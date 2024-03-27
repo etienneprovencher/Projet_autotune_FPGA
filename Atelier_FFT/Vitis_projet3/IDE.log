@@ -8074,3 +8074,1060 @@ con
 16:32:12 INFO  : Result from executing command 'getProjects': design_1_wrapper
 16:32:12 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/Users/etipr/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm;design_1_wrapper|C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
 16:32:13 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+16:41:48 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+16:41:53 INFO  : Disconnected from the channel tcfchan#63.
+16:41:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:41:53 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+16:41:53 INFO  : 'jtag frequency' command is executed.
+16:41:53 INFO  : Context for 'APU' is selected.
+16:41:54 INFO  : System reset is completed.
+16:41:57 INFO  : 'after 3000' command is executed.
+16:41:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+16:41:58 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+16:41:58 INFO  : Context for 'APU' is selected.
+16:41:58 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+16:41:58 INFO  : 'configparams force-mem-access 1' command is executed.
+16:41:58 INFO  : Context for 'APU' is selected.
+16:41:58 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+16:41:58 INFO  : 'ps7_init' command is executed.
+16:41:58 INFO  : 'ps7_post_config' command is executed.
+16:41:58 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:41:58 INFO  : Context for processor 'microblaze_0' is selected.
+16:41:58 INFO  : The application 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf' is downloaded to processor 'microblaze_0'.
+16:41:58 INFO  : 'configparams force-mem-access 0' command is executed.
+16:41:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:41:58 INFO  : Context for processor 'microblaze_0' is selected.
+16:41:59 INFO  : 'con' command is executed.
+16:41:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:41:59 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+16:44:09 INFO  : Result from executing command 'getProjects': design_1_wrapper
+16:44:09 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/Users/etipr/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm;design_1_wrapper|C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+16:44:09 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+16:44:30 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+16:45:23 ERROR : XSCT server calls should not be made from TCF thread.
+java.lang.RuntimeException: XSCT server calls should not be made from TCF thread.
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueAndWait(XSDBCommandManager.java:391)
+	at com.xilinx.sdk.xsdb.XsdbCommandUtils.executeAndRespond(XsdbCommandUtils.java:325)
+	at com.xilinx.sdk.hw.internal.HwPlatform.populateDesignProps(HwPlatform.java:522)
+	at com.xilinx.sdk.hw.internal.HwPlatform.isZynq(HwPlatform.java:1102)
+	at com.xilinx.sdk.hw.internal.HwPlatform.getArchFamily(HwPlatform.java:588)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readCrossTriggerModel(BaseLaunchConfigModel.java:174)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readAndSetAttributes(BaseLaunchConfigModel.java:156)
+	at com.xilinx.sdx.sdsoc.debug.ui.SdsLaunchConfigModel.newInstance(SdsLaunchConfigModel.java:104)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.createConfigModel(SdsTcfLaunchDelegate.java:85)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.generateReports(SdsTcfLaunchDelegate.java:634)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.onDisconnected(SdsTcfLaunchDelegate.java:608)
+	at org.eclipse.tcf.internal.debug.ui.model.TCFModelManager$1.onDisconnected(TCFModelManager.java:79)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch.onDisconnected(TCFLaunch.java:532)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch$43.onChannelClosed(TCFLaunch.java:1643)
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:858)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+16:45:23 INFO  : Disconnected from the channel tcfchan#66.
+16:45:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:45:23 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+16:45:23 INFO  : 'jtag frequency' command is executed.
+16:45:23 INFO  : Context for 'APU' is selected.
+16:45:23 INFO  : System reset is completed.
+16:45:26 INFO  : 'after 3000' command is executed.
+16:45:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+16:45:28 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+16:45:28 INFO  : Context for 'APU' is selected.
+16:45:28 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+16:45:28 INFO  : 'configparams force-mem-access 1' command is executed.
+16:45:28 INFO  : Context for 'APU' is selected.
+16:45:28 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+16:45:28 INFO  : 'ps7_init' command is executed.
+16:45:28 INFO  : 'ps7_post_config' command is executed.
+16:45:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:45:28 INFO  : Context for processor 'microblaze_0' is selected.
+16:45:28 INFO  : The application 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf' is downloaded to processor 'microblaze_0'.
+16:45:28 INFO  : 'configparams force-mem-access 0' command is executed.
+16:45:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:45:28 INFO  : Context for processor 'microblaze_0' is selected.
+16:45:29 INFO  : 'con' command is executed.
+16:45:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:45:29 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+16:47:18 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+16:47:37 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+16:47:41 INFO  : Disconnected from the channel tcfchan#68.
+16:47:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:47:41 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+16:47:41 INFO  : 'jtag frequency' command is executed.
+16:47:41 INFO  : Context for 'APU' is selected.
+16:47:41 INFO  : System reset is completed.
+16:47:44 INFO  : 'after 3000' command is executed.
+16:47:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+16:47:45 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+16:47:45 INFO  : Context for 'APU' is selected.
+16:47:45 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+16:47:45 INFO  : 'configparams force-mem-access 1' command is executed.
+16:47:45 INFO  : Context for 'APU' is selected.
+16:47:45 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+16:47:45 INFO  : 'ps7_init' command is executed.
+16:47:45 INFO  : 'ps7_post_config' command is executed.
+16:47:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:47:45 INFO  : Context for processor 'microblaze_0' is selected.
+16:47:46 INFO  : The application 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf' is downloaded to processor 'microblaze_0'.
+16:47:46 INFO  : 'configparams force-mem-access 0' command is executed.
+16:47:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:47:46 INFO  : Context for processor 'microblaze_0' is selected.
+16:47:46 INFO  : 'con' command is executed.
+16:47:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:47:46 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+16:53:56 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+16:54:01 INFO  : Disconnected from the channel tcfchan#69.
+16:54:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:54:01 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+16:54:01 INFO  : 'jtag frequency' command is executed.
+16:54:01 INFO  : Context for 'APU' is selected.
+16:54:01 INFO  : System reset is completed.
+16:54:04 INFO  : 'after 3000' command is executed.
+16:54:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+16:54:05 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+16:54:05 INFO  : Context for 'APU' is selected.
+16:54:05 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+16:54:05 INFO  : 'configparams force-mem-access 1' command is executed.
+16:54:05 INFO  : Context for 'APU' is selected.
+16:54:05 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+16:54:06 INFO  : 'ps7_init' command is executed.
+16:54:06 INFO  : 'ps7_post_config' command is executed.
+16:54:06 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:54:06 INFO  : Context for processor 'microblaze_0' is selected.
+16:54:06 INFO  : The application 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf' is downloaded to processor 'microblaze_0'.
+16:54:06 INFO  : 'configparams force-mem-access 0' command is executed.
+16:54:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:54:06 INFO  : Context for processor 'microblaze_0' is selected.
+16:54:06 INFO  : 'con' command is executed.
+16:54:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:54:06 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+16:56:38 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+16:56:41 INFO  : Disconnected from the channel tcfchan#70.
+16:56:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:56:42 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+16:56:42 INFO  : 'jtag frequency' command is executed.
+16:56:42 INFO  : Context for 'APU' is selected.
+16:56:42 INFO  : System reset is completed.
+16:56:45 INFO  : 'after 3000' command is executed.
+16:56:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+16:56:46 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+16:56:46 INFO  : Context for 'APU' is selected.
+16:56:46 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+16:56:46 INFO  : 'configparams force-mem-access 1' command is executed.
+16:56:46 INFO  : Context for 'APU' is selected.
+16:56:46 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+16:56:47 INFO  : 'ps7_init' command is executed.
+16:56:47 INFO  : 'ps7_post_config' command is executed.
+16:56:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:56:47 INFO  : Context for processor 'microblaze_0' is selected.
+16:56:47 INFO  : The application 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf' is downloaded to processor 'microblaze_0'.
+16:56:47 INFO  : 'configparams force-mem-access 0' command is executed.
+16:56:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:56:47 INFO  : Context for processor 'microblaze_0' is selected.
+16:56:47 INFO  : 'con' command is executed.
+16:56:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:56:47 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+17:01:57 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+17:03:55 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+17:04:30 INFO  : Result from executing command 'getProjects': design_1_wrapper
+17:04:30 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/Users/etipr/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm;design_1_wrapper|C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+17:04:30 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+17:04:34 INFO  : The hardware specfication used by project 'FFT_demo_AXIS' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+17:04:34 INFO  : The file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+17:04:34 INFO  : The file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS\_ide\bitstream\design_1_wrapper.mmi' stored in project is removed.
+17:04:34 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS\_ide\bitstream' in project 'FFT_demo_AXIS'.
+17:04:34 INFO  : The file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS\_ide\psinit\ps7_init.tcl' stored in project is removed.
+17:04:40 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS\_ide\psinit' in project 'FFT_demo_AXIS'.
+17:04:48 INFO  : Disconnected from the channel tcfchan#71.
+17:04:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:04:49 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+17:04:49 INFO  : 'jtag frequency' command is executed.
+17:04:49 INFO  : Context for 'APU' is selected.
+17:04:49 INFO  : System reset is completed.
+17:04:52 INFO  : 'after 3000' command is executed.
+17:04:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+17:04:53 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+17:04:53 INFO  : Context for 'APU' is selected.
+17:04:53 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+17:04:53 INFO  : 'configparams force-mem-access 1' command is executed.
+17:04:53 INFO  : Context for 'APU' is selected.
+17:04:53 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+17:04:53 INFO  : 'ps7_init' command is executed.
+17:04:54 INFO  : 'ps7_post_config' command is executed.
+17:04:54 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:04:54 INFO  : Context for processor 'microblaze_0' is selected.
+17:04:54 INFO  : The application 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf' is downloaded to processor 'microblaze_0'.
+17:04:54 INFO  : 'configparams force-mem-access 0' command is executed.
+17:04:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:04:54 INFO  : Context for processor 'microblaze_0' is selected.
+17:04:54 INFO  : 'con' command is executed.
+17:04:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:04:54 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+17:59:46 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+18:00:34 INFO  : Result from executing command 'getProjects': design_1_wrapper
+18:00:34 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/Users/etipr/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm;design_1_wrapper|C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+18:00:34 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+18:02:03 ERROR : XSCT server calls should not be made from TCF thread.
+java.lang.RuntimeException: XSCT server calls should not be made from TCF thread.
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueAndWait(XSDBCommandManager.java:391)
+	at com.xilinx.sdk.xsdb.XsdbCommandUtils.executeAndRespond(XsdbCommandUtils.java:325)
+	at com.xilinx.sdk.hw.internal.HwPlatform.populateDesignProps(HwPlatform.java:522)
+	at com.xilinx.sdk.hw.internal.HwPlatform.isZynq(HwPlatform.java:1102)
+	at com.xilinx.sdk.hw.internal.HwPlatform.getArchFamily(HwPlatform.java:588)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readCrossTriggerModel(BaseLaunchConfigModel.java:174)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readAndSetAttributes(BaseLaunchConfigModel.java:156)
+	at com.xilinx.sdx.sdsoc.debug.ui.SdsLaunchConfigModel.newInstance(SdsLaunchConfigModel.java:104)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.createConfigModel(SdsTcfLaunchDelegate.java:85)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.generateReports(SdsTcfLaunchDelegate.java:634)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.onDisconnected(SdsTcfLaunchDelegate.java:608)
+	at org.eclipse.tcf.internal.debug.ui.model.TCFModelManager$1.onDisconnected(TCFModelManager.java:79)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch.onDisconnected(TCFLaunch.java:532)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch$43.onChannelClosed(TCFLaunch.java:1643)
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:858)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+18:02:03 INFO  : Disconnected from the channel tcfchan#74.
+18:02:03 INFO  : The hardware specfication used by project 'FFT_demo_AXIS' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+18:02:03 INFO  : The file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+18:02:03 INFO  : The file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS\_ide\bitstream\design_1_wrapper.mmi' stored in project is removed.
+18:02:04 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS\_ide\bitstream' in project 'FFT_demo_AXIS'.
+18:02:04 INFO  : The file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS\_ide\psinit\ps7_init.tcl' stored in project is removed.
+18:02:08 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS\_ide\psinit' in project 'FFT_demo_AXIS'.
+18:02:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:02:09 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+18:02:09 INFO  : 'jtag frequency' command is executed.
+18:02:09 INFO  : Context for 'APU' is selected.
+18:02:09 INFO  : System reset is completed.
+18:02:10 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+18:02:12 INFO  : 'after 3000' command is executed.
+18:02:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+18:02:13 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+18:02:13 INFO  : Context for 'APU' is selected.
+18:02:13 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:02:13 INFO  : 'configparams force-mem-access 1' command is executed.
+18:02:13 INFO  : Context for 'APU' is selected.
+18:02:13 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+18:02:14 INFO  : 'ps7_init' command is executed.
+18:02:14 INFO  : 'ps7_post_config' command is executed.
+18:02:14 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:02:14 INFO  : Context for processor 'microblaze_0' is selected.
+18:02:14 INFO  : The application 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf' is downloaded to processor 'microblaze_0'.
+18:02:14 INFO  : 'configparams force-mem-access 0' command is executed.
+18:02:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:02:14 INFO  : Context for processor 'microblaze_0' is selected.
+18:02:15 INFO  : 'con' command is executed.
+18:02:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:02:15 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+18:02:18 INFO  : Disconnected from the channel tcfchan#77.
+18:02:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:02:18 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+18:02:18 INFO  : 'jtag frequency' command is executed.
+18:02:18 INFO  : Context for 'APU' is selected.
+18:02:18 INFO  : System reset is completed.
+18:02:21 INFO  : 'after 3000' command is executed.
+18:02:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+18:02:22 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+18:02:22 INFO  : Context for 'APU' is selected.
+18:02:22 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:02:22 INFO  : 'configparams force-mem-access 1' command is executed.
+18:02:22 INFO  : Context for 'APU' is selected.
+18:02:22 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+18:02:23 INFO  : 'ps7_init' command is executed.
+18:02:23 INFO  : 'ps7_post_config' command is executed.
+18:02:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:02:23 INFO  : Context for processor 'microblaze_0' is selected.
+18:02:23 INFO  : The application 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf' is downloaded to processor 'microblaze_0'.
+18:02:23 INFO  : 'configparams force-mem-access 0' command is executed.
+18:02:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:02:23 INFO  : Context for processor 'microblaze_0' is selected.
+18:02:23 INFO  : 'con' command is executed.
+18:02:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:02:23 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+18:05:23 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+18:05:28 INFO  : Disconnected from the channel tcfchan#78.
+18:05:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:05:28 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+18:05:28 INFO  : 'jtag frequency' command is executed.
+18:05:28 INFO  : Context for 'APU' is selected.
+18:05:28 INFO  : System reset is completed.
+18:05:31 INFO  : 'after 3000' command is executed.
+18:05:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+18:05:33 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+18:05:33 INFO  : Context for 'APU' is selected.
+18:05:33 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:05:33 INFO  : 'configparams force-mem-access 1' command is executed.
+18:05:33 INFO  : Context for 'APU' is selected.
+18:05:33 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+18:05:33 INFO  : 'ps7_init' command is executed.
+18:05:33 INFO  : 'ps7_post_config' command is executed.
+18:05:33 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:05:33 INFO  : Context for processor 'microblaze_0' is selected.
+18:05:33 INFO  : The application 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf' is downloaded to processor 'microblaze_0'.
+18:05:33 INFO  : 'configparams force-mem-access 0' command is executed.
+18:05:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:05:33 INFO  : Context for processor 'microblaze_0' is selected.
+18:05:33 INFO  : 'con' command is executed.
+18:05:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:05:33 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+18:06:19 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+18:22:50 INFO  : Result from executing command 'getProjects': design_1_wrapper
+18:22:50 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/Users/etipr/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm;design_1_wrapper|C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+18:22:51 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+18:23:13 ERROR : XSCT server calls should not be made from TCF thread.
+java.lang.RuntimeException: XSCT server calls should not be made from TCF thread.
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueAndWait(XSDBCommandManager.java:391)
+	at com.xilinx.sdk.xsdb.XsdbCommandUtils.executeAndRespond(XsdbCommandUtils.java:325)
+	at com.xilinx.sdk.hw.internal.HwPlatform.populateDesignProps(HwPlatform.java:522)
+	at com.xilinx.sdk.hw.internal.HwPlatform.isZynq(HwPlatform.java:1102)
+	at com.xilinx.sdk.hw.internal.HwPlatform.getArchFamily(HwPlatform.java:588)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readCrossTriggerModel(BaseLaunchConfigModel.java:174)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readAndSetAttributes(BaseLaunchConfigModel.java:156)
+	at com.xilinx.sdx.sdsoc.debug.ui.SdsLaunchConfigModel.newInstance(SdsLaunchConfigModel.java:104)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.createConfigModel(SdsTcfLaunchDelegate.java:85)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.generateReports(SdsTcfLaunchDelegate.java:634)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.onDisconnected(SdsTcfLaunchDelegate.java:608)
+	at org.eclipse.tcf.internal.debug.ui.model.TCFModelManager$1.onDisconnected(TCFModelManager.java:79)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch.onDisconnected(TCFLaunch.java:532)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch$43.onChannelClosed(TCFLaunch.java:1643)
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:858)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+18:23:13 INFO  : Disconnected from the channel tcfchan#79.
+18:23:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:23:14 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+18:23:14 INFO  : 'jtag frequency' command is executed.
+18:23:14 INFO  : Context for 'APU' is selected.
+18:23:14 INFO  : System reset is completed.
+18:23:17 INFO  : 'after 3000' command is executed.
+18:23:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+18:23:18 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+18:23:18 INFO  : Context for 'APU' is selected.
+18:23:18 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:23:18 INFO  : 'configparams force-mem-access 1' command is executed.
+18:23:18 INFO  : Context for 'APU' is selected.
+18:23:18 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+18:23:18 INFO  : 'ps7_init' command is executed.
+18:23:18 INFO  : 'ps7_post_config' command is executed.
+18:23:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:23:18 INFO  : Context for processor 'microblaze_0' is selected.
+18:23:19 INFO  : The application 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf' is downloaded to processor 'microblaze_0'.
+18:23:19 INFO  : 'configparams force-mem-access 0' command is executed.
+18:23:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:23:19 INFO  : Context for processor 'microblaze_0' is selected.
+18:23:19 INFO  : 'con' command is executed.
+18:23:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:23:19 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+18:32:52 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+18:32:54 INFO  : Disconnected from the channel tcfchan#81.
+18:32:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:32:59 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+18:32:59 INFO  : 'jtag frequency' command is executed.
+18:32:59 INFO  : Context for 'APU' is selected.
+18:32:59 INFO  : System reset is completed.
+18:33:02 INFO  : 'after 3000' command is executed.
+18:33:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+18:33:04 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+18:33:04 INFO  : Context for 'APU' is selected.
+18:33:04 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:33:04 INFO  : 'configparams force-mem-access 1' command is executed.
+18:33:04 INFO  : Context for 'APU' is selected.
+18:33:04 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+18:33:04 INFO  : 'ps7_init' command is executed.
+18:33:04 INFO  : 'ps7_post_config' command is executed.
+18:33:04 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:33:04 INFO  : 'configparams force-mem-access 0' command is executed.
+18:33:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:33:04 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+18:33:23 INFO  : Disconnected from the channel tcfchan#82.
+18:33:28 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+18:34:04 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+18:34:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:34:07 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+18:34:07 INFO  : 'jtag frequency' command is executed.
+18:34:07 INFO  : Context for 'APU' is selected.
+18:34:07 INFO  : System reset is completed.
+18:34:10 INFO  : 'after 3000' command is executed.
+18:34:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+18:34:11 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+18:34:11 INFO  : Context for 'APU' is selected.
+18:34:11 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:34:11 INFO  : 'configparams force-mem-access 1' command is executed.
+18:34:11 INFO  : Context for 'APU' is selected.
+18:34:11 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+18:34:12 INFO  : 'ps7_init' command is executed.
+18:34:12 INFO  : 'ps7_post_config' command is executed.
+18:34:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:34:12 INFO  : Context for processor 'microblaze_0' is selected.
+18:34:12 INFO  : The application 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf' is downloaded to processor 'microblaze_0'.
+18:34:12 INFO  : 'configparams force-mem-access 0' command is executed.
+18:34:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:34:12 INFO  : Context for processor 'microblaze_0' is selected.
+18:34:12 INFO  : 'con' command is executed.
+18:34:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:34:12 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+18:35:17 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+18:35:20 INFO  : Disconnected from the channel tcfchan#83.
+18:35:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:35:20 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+18:35:20 INFO  : 'jtag frequency' command is executed.
+18:35:20 INFO  : Context for 'APU' is selected.
+18:35:20 INFO  : System reset is completed.
+18:35:23 INFO  : 'after 3000' command is executed.
+18:35:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+18:35:25 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+18:35:25 INFO  : Context for 'APU' is selected.
+18:35:25 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:35:25 INFO  : 'configparams force-mem-access 1' command is executed.
+18:35:25 INFO  : Context for 'APU' is selected.
+18:35:25 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+18:35:25 INFO  : 'ps7_init' command is executed.
+18:35:25 INFO  : 'ps7_post_config' command is executed.
+18:35:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:35:25 INFO  : Context for processor 'microblaze_0' is selected.
+18:35:25 INFO  : The application 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf' is downloaded to processor 'microblaze_0'.
+18:35:25 INFO  : 'configparams force-mem-access 0' command is executed.
+18:35:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:35:25 INFO  : Context for processor 'microblaze_0' is selected.
+18:35:26 INFO  : 'con' command is executed.
+18:35:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:35:26 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+18:37:11 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+18:37:25 INFO  : Disconnected from the channel tcfchan#84.
+18:37:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:37:25 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+18:37:25 INFO  : 'jtag frequency' command is executed.
+18:37:25 INFO  : Context for 'APU' is selected.
+18:37:25 INFO  : System reset is completed.
+18:37:28 INFO  : 'after 3000' command is executed.
+18:37:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+18:37:29 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+18:37:29 INFO  : Context for 'APU' is selected.
+18:37:29 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:37:29 INFO  : 'configparams force-mem-access 1' command is executed.
+18:37:29 INFO  : Context for 'APU' is selected.
+18:37:29 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+18:37:30 INFO  : 'ps7_init' command is executed.
+18:37:30 INFO  : 'ps7_post_config' command is executed.
+18:37:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:37:30 INFO  : Context for processor 'microblaze_0' is selected.
+18:37:30 INFO  : The application 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf' is downloaded to processor 'microblaze_0'.
+18:37:30 INFO  : 'configparams force-mem-access 0' command is executed.
+18:37:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:37:30 INFO  : Context for processor 'microblaze_0' is selected.
+18:37:30 INFO  : 'con' command is executed.
+18:37:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:37:30 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+18:38:05 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+18:38:07 INFO  : Disconnected from the channel tcfchan#85.
+18:38:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:38:07 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+18:38:07 INFO  : 'jtag frequency' command is executed.
+18:38:07 INFO  : Context for 'APU' is selected.
+18:38:08 INFO  : System reset is completed.
+18:38:11 INFO  : 'after 3000' command is executed.
+18:38:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+18:38:12 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+18:38:12 INFO  : Context for 'APU' is selected.
+18:38:12 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:38:12 INFO  : 'configparams force-mem-access 1' command is executed.
+18:38:12 INFO  : Context for 'APU' is selected.
+18:38:12 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+18:38:12 INFO  : 'ps7_init' command is executed.
+18:38:12 INFO  : 'ps7_post_config' command is executed.
+18:38:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:38:12 INFO  : Context for processor 'microblaze_0' is selected.
+18:38:12 INFO  : The application 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf' is downloaded to processor 'microblaze_0'.
+18:38:13 INFO  : 'configparams force-mem-access 0' command is executed.
+18:38:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:38:13 INFO  : Context for processor 'microblaze_0' is selected.
+18:38:13 INFO  : 'con' command is executed.
+18:38:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:38:13 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+18:42:31 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+18:42:34 INFO  : Disconnected from the channel tcfchan#86.
+18:42:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:42:34 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+18:42:34 INFO  : 'jtag frequency' command is executed.
+18:42:34 INFO  : Context for 'APU' is selected.
+18:42:34 INFO  : System reset is completed.
+18:42:37 INFO  : 'after 3000' command is executed.
+18:42:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+18:42:38 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+18:42:38 INFO  : Context for 'APU' is selected.
+18:42:38 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:42:38 INFO  : 'configparams force-mem-access 1' command is executed.
+18:42:38 INFO  : Context for 'APU' is selected.
+18:42:38 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+18:42:39 INFO  : 'ps7_init' command is executed.
+18:42:39 INFO  : 'ps7_post_config' command is executed.
+18:42:39 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:42:39 INFO  : Context for processor 'microblaze_0' is selected.
+18:42:39 INFO  : The application 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf' is downloaded to processor 'microblaze_0'.
+18:42:39 INFO  : 'configparams force-mem-access 0' command is executed.
+18:42:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:42:39 INFO  : Context for processor 'microblaze_0' is selected.
+18:42:39 INFO  : 'con' command is executed.
+18:42:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:42:39 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+18:42:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:42:39 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+18:42:40 INFO  : 'jtag frequency' command is executed.
+18:42:40 INFO  : Context for 'APU' is selected.
+18:42:40 INFO  : System reset is completed.
+18:42:43 INFO  : 'after 3000' command is executed.
+18:42:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+18:42:44 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+18:42:44 INFO  : Context for 'APU' is selected.
+18:42:44 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:42:44 INFO  : 'configparams force-mem-access 1' command is executed.
+18:42:44 INFO  : Context for 'APU' is selected.
+18:42:44 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+18:42:44 INFO  : 'ps7_init' command is executed.
+18:42:44 INFO  : 'ps7_post_config' command is executed.
+18:42:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:42:44 INFO  : Context for processor 'microblaze_0' is selected.
+18:42:44 INFO  : The application 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf' is downloaded to processor 'microblaze_0'.
+18:42:45 INFO  : 'configparams force-mem-access 0' command is executed.
+18:42:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:42:45 INFO  : Context for processor 'microblaze_0' is selected.
+18:42:45 INFO  : 'con' command is executed.
+18:42:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:42:45 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+18:43:32 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+18:43:50 INFO  : Disconnected from the channel tcfchan#87.
+18:44:16 INFO  : Result from executing command 'getProjects': design_1_wrapper
+18:44:16 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/Users/etipr/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm;design_1_wrapper|C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+18:44:16 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+18:44:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:44:22 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+18:44:22 INFO  : 'jtag frequency' command is executed.
+18:44:22 INFO  : Context for 'APU' is selected.
+18:44:22 INFO  : System reset is completed.
+18:44:25 INFO  : 'after 3000' command is executed.
+18:44:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+18:44:26 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+18:44:27 INFO  : Context for 'APU' is selected.
+18:44:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:44:27 INFO  : 'configparams force-mem-access 1' command is executed.
+18:44:27 INFO  : Context for 'APU' is selected.
+18:44:27 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+18:44:27 INFO  : 'ps7_init' command is executed.
+18:44:27 INFO  : 'ps7_post_config' command is executed.
+18:44:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:44:27 INFO  : Context for processor 'microblaze_0' is selected.
+18:44:27 INFO  : The application 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf' is downloaded to processor 'microblaze_0'.
+18:44:27 INFO  : 'configparams force-mem-access 0' command is executed.
+18:44:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:44:27 INFO  : Context for processor 'microblaze_0' is selected.
+18:44:28 INFO  : 'con' command is executed.
+18:44:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:44:28 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+18:45:41 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+18:45:43 INFO  : Disconnected from the channel tcfchan#90.
+18:45:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:45:43 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+18:45:43 INFO  : 'jtag frequency' command is executed.
+18:45:43 INFO  : Context for 'APU' is selected.
+18:45:43 INFO  : System reset is completed.
+18:45:46 INFO  : 'after 3000' command is executed.
+18:45:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+18:45:48 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+18:45:48 INFO  : Context for 'APU' is selected.
+18:45:48 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:45:48 INFO  : 'configparams force-mem-access 1' command is executed.
+18:45:48 INFO  : Context for 'APU' is selected.
+18:45:48 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+18:45:48 INFO  : 'ps7_init' command is executed.
+18:45:48 INFO  : 'ps7_post_config' command is executed.
+18:45:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:45:48 INFO  : Context for processor 'microblaze_0' is selected.
+18:45:48 INFO  : The application 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf' is downloaded to processor 'microblaze_0'.
+18:45:48 INFO  : 'configparams force-mem-access 0' command is executed.
+18:45:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:45:48 INFO  : Context for processor 'microblaze_0' is selected.
+18:45:48 INFO  : 'con' command is executed.
+18:45:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:45:48 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+18:45:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:45:49 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77C7BA' is selected.
+18:45:49 INFO  : 'jtag frequency' command is executed.
+18:45:49 INFO  : Context for 'APU' is selected.
+18:45:49 INFO  : System reset is completed.
+18:45:52 INFO  : 'after 3000' command is executed.
+18:45:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}' command is executed.
+18:45:53 INFO  : Device configured successfully with "C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit"
+18:45:53 INFO  : Context for 'APU' is selected.
+18:45:53 INFO  : Hardware design and registers information is loaded from 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:45:53 INFO  : 'configparams force-mem-access 1' command is executed.
+18:45:53 INFO  : Context for 'APU' is selected.
+18:45:53 INFO  : Sourcing of 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl' is done.
+18:45:54 INFO  : 'ps7_init' command is executed.
+18:45:54 INFO  : 'ps7_post_config' command is executed.
+18:45:54 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:45:54 INFO  : Context for processor 'microblaze_0' is selected.
+18:45:54 INFO  : The application 'C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf' is downloaded to processor 'microblaze_0'.
+18:45:54 INFO  : 'configparams force-mem-access 0' command is executed.
+18:45:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}
+fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:45:54 INFO  : Context for processor 'microblaze_0' is selected.
+18:45:54 INFO  : 'con' command is executed.
+18:45:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:45:54 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+18:48:08 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+18:49:42 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+18:50:37 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+18:51:37 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
+18:51:44 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
