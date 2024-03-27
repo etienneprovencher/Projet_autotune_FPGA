@@ -133,7 +133,9 @@ int XLlFifoSendData(XLlFifo *InstancePtr, u16 DeviceId, u32* DataBuffer)
 	Done = 0;
 	/* Transmit the Data Stream */
 	Status = TxSend(InstancePtr, DataBuffer);
+	xil_printf("avant while(!done)\n\r");
 	while(!Done); //wait for the fifo to be fully transmitted; this is indicated by an interrupt flag that sets Done
+	xil_printf("apres while(!done)\n\r");
 
 	/* Check for errors */
 //	if(Error) {
@@ -210,18 +212,28 @@ void FifoHandler(XLlFifo *InstancePtr)
 
 	Pending = XLlFifo_IntPending(InstancePtr);
 	while (Pending) {
+		xil_printf("while pending\n\r");
+
 		if (Pending & XLLF_INT_RC_MASK) {
+			xil_printf("etape 1\n\r");
 			FifoRecvHandler(InstancePtr);
 			XLlFifo_IntClear(InstancePtr, XLLF_INT_RC_MASK);
 		}
-		else if (Pending & XLLF_INT_TC_MASK) {
+		else if (Pending & XLLF_INT_TC_MASK)
+		{
+			xil_printf("avant handler\n\r");
 			FifoSendHandler(InstancePtr);
+			xil_printf("apres handler\n\r");
+
 		}
 		else if (Pending & XLLF_INT_ERROR_MASK){
+			xil_printf("etape 2\n\r");
 			FifoErrorHandler(InstancePtr, Pending);
 			XLlFifo_IntClear(InstancePtr, XLLF_INT_ERROR_MASK);
+
 		} else {
 			XLlFifo_IntClear(InstancePtr, Pending);
+			xil_printf("etape 3\n\r");
 		}
 		Pending = XLlFifo_IntPending(InstancePtr);
 	}
@@ -300,13 +312,17 @@ void FifoErrorHandler(XLlFifo *InstancePtr, u32 Pending)
 {
 	if (Pending & XLLF_INT_RPURE_MASK) {
 		XLlFifo_RxReset(InstancePtr);
+		xil_printf("erreur 1\n\r");
 	} else if (Pending & XLLF_INT_RPORE_MASK) {
 		XLlFifo_RxReset(InstancePtr);
+		xil_printf("erreur 2\n\r");
 	} else if(Pending & XLLF_INT_RPUE_MASK) {
+		xil_printf("erreur 3\n\r");
 		XLlFifo_RxReset(InstancePtr);
 	} else if (Pending & XLLF_INT_TPOE_MASK) {
+		xil_printf("erreur 4\n\r");
 		XLlFifo_TxReset(InstancePtr);
-	} else if (Pending & XLLF_INT_TSE_MASK) {
+	} else if (Pending & XLLF_INT_TSE_MASK) {xil_printf("erreur 5\n\r");
 	}
 	Error++;
 }
