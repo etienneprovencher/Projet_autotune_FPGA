@@ -44,14 +44,14 @@ s32 FFTBuffer[MAX_DATA_BUFFER_SIZE];
 void InitProcessedData()
 {
 	unsigned int i;
-	const float scale1 = 10.0/128.0; //constante d'échelle pour la fréquence
-	const float scale2 = 41.0/128.0;
-	const float scale3 = 65.0/128.0;
+	const float scale1 = 50.0/1024.0; //constante d'échelle pour la fréquence
+	const float scale2 = 100.0/1024.0;
+	const float scale3 = 70.0/1024.0;
 
 	for(i=0;i<MAX_DATA_BUFFER_SIZE;i++){
 		//single sinewave
 		//the format is 16MSB imag part, 16LSB real part
-		SourceBuffer[i] = (s16)(180*sin(2*M_PI*scale1 *i)) + (s16)(200*sin(2*M_PI*scale2 *i)) + (s16)(100*sin(2*M_PI*scale3 *i)); //partie reelle  = sin(), partie imag = 0 (<<16)
+		SourceBuffer[i] = (s16)(70*sin(2*M_PI*scale1 *i)) + (s16)(20*sin(2*M_PI*scale2 *i)) + (s16)(20*sin(2*M_PI*scale3 *i)); //partie reelle  = sin(), partie imag = 0 (<<16)
 		xil_printf("i : %d    amplitude : %d   \n\r", i, SourceBuffer[i]);
 	}
 }
@@ -98,7 +98,7 @@ int main(void)
 			   }
 		   }
 
-		   xil_printf("frequence fondamentale : %d \n\r",FreqFond);
+		   xil_printf("%d \n\r",FreqFond);
 	   }
 
    }
@@ -106,7 +106,4 @@ int main(void)
    //This function should never return
    return 0;
 }
-
-
-
 

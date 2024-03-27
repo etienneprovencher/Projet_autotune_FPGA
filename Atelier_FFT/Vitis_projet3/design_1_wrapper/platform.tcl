@@ -39,3 +39,7 @@ platform generate
 platform generate
 platform generate
 platform generate
+platform active {design_1_wrapper}
+platform config -updatehw {C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper.xsa}
+platform clean
+platform generate

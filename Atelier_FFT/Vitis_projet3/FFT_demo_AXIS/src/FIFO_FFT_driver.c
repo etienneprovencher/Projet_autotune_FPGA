@@ -126,7 +126,9 @@ int XLFifoInit(XLlFifo *InstancePtr, u16 DeviceId){
 ******************************************************************************/
 int XLlFifoSendData(XLlFifo *InstancePtr, u16 DeviceId, u32* DataBuffer)
 {
+	xil_printf("fifosenddata\n\r");
 	int Status;
+
 
 	Done = 0;
 	/* Transmit the Data Stream */
@@ -134,10 +136,10 @@ int XLlFifoSendData(XLlFifo *InstancePtr, u16 DeviceId, u32* DataBuffer)
 	while(!Done); //wait for the fifo to be fully transmitted; this is indicated by an interrupt flag that sets Done
 
 	/* Check for errors */
-	if(Error) {
-		xil_printf("Errors in the FIFO\n\r");
-		return XST_FAILURE;
-	}
+//	if(Error) {
+//		xil_printf("Errors in the FIFO\n\r");
+//		return XST_FAILURE;
+//	}
 
 	return Status;
 }
@@ -162,6 +164,7 @@ int XLlFifoSendData(XLlFifo *InstancePtr, u16 DeviceId, u32* DataBuffer)
 ******************************************************************************/
 int TxSend(XLlFifo *InstancePtr, u32  *SourceAddr)
 {
+	xil_printf("Txsend\n\r");
 	int i;
 	int j;
 	xil_printf("Transmitting Data ... \r\n");
@@ -176,9 +179,12 @@ int TxSend(XLlFifo *InstancePtr, u32  *SourceAddr)
 		}
 
 	}
+	xil_printf("test\n\r");
 
 	/* Start Transmission by writing transmission length into the TLR */
 	XLlFifo_iTxSetLen(InstancePtr, (MAX_DATA_BUFFER_SIZE * WORD_SIZE));
+
+	xil_printf("test\n\r");
 
 
 	/* Transmission Complete */
