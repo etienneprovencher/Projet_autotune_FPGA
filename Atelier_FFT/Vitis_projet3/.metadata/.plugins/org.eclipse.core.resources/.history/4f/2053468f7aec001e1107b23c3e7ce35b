@@ -131,9 +131,9 @@ int XLlFifoSendData(XLlFifo *InstancePtr, u16 DeviceId, u32* DataBuffer)
 	Done = 0;
 	/* Transmit the Data Stream */
 	Status = TxSend(InstancePtr, DataBuffer);
-
+	xil_printf("avant while(!done)\n\r");
 	while(!Done); //wait for the fifo to be fully transmitted; this is indicated by an interrupt flag that sets Done
-
+	xil_printf("apres while(!done)\n\r");
 
 	/* Check for errors */
 	if(Error) {
@@ -211,9 +211,9 @@ void FifoHandler(XLlFifo *InstancePtr)
 			XLlFifo_IntClear(InstancePtr, XLLF_INT_RC_MASK);
 		}
 		else if (Pending & XLLF_INT_TC_MASK) {
-
+			xil_printf("avant handler\n\r");
 			FifoSendHandler(InstancePtr);
-
+			xil_printf("apres handler\n\r");
 		}
 		else if (Pending & XLLF_INT_ERROR_MASK){
 			FifoErrorHandler(InstancePtr, Pending);

@@ -152,3 +152,4 @@ timestamp=[2024-03-27 16:30:55], mode=BUILD, duration=0:00:00.203, duration_ms=2
 timestamp=[2024-03-27 16:30:55], mode=BUILD, duration=0:00:00.186, duration_ms=186, data={name=FFT_demo_AXIS_system, configuration=Debug, clean_build=true}
 timestamp=[2024-03-27 16:32:13], mode=PLATFORM_GENERATION, duration=0:00:14.247, duration_ms=14247, data={name=design_1_wrapper}
 timestamp=[2024-03-27 16:32:14], mode=BUILD, duration=0:00:01.537, duration_ms=1537, data={name=FFT_demo_AXIS, configuration=Debug, clean_build=false}
+timestamp=[2024-03-27 16:41:49], mode=BUILD, duration=0:00:00.811, duration_ms=811, data={name=FFT_demo_AXIS, configuration=Debug, clean_build=false}
