@@ -51,7 +51,7 @@ void InitProcessedData()
 	for(i=0;i<MAX_DATA_BUFFER_SIZE;i++){
 		//single sinewave
 		//the format is 16MSB imag part, 16LSB real part
-		SourceBuffer[i] = (s16)(180*sin(2*M_PI*scale1 *i)) + (s16)(200*sin(2*M_PI*scale2 *i)) + (s16)(100*sin(2*M_PI*scale3 *i)); //partie reelle  = sin(), partie imag = 0 (<<16)
+		SourceBuffer[i] = (s16)(100*sin(2*M_PI*scale1 *i)) + (s16)(10*sin(2*M_PI*scale2 *i)) + (s16)(10*sin(2*M_PI*scale3 *i)); //partie reelle  = sin(), partie imag = 0 (<<16)
 		xil_printf("i : %d    amplitude : %d   \n\r", i, SourceBuffer[i]);
 	}
 }

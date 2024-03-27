@@ -40,3 +40,10 @@ platform generate
 platform generate
 platform generate
 platform generate -domains standalone_microblaze_0,zynq_fsbl 
+platform config -updatehw {C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper.xsa}
+platform clean
+platform generate
+platform config -updatehw {C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper.xsa}
+platform clean
+platform generate
+platform config -updatehw {C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper.xsa}
