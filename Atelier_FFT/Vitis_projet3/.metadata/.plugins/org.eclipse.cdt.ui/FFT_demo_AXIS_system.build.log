@@ -1,8 +1,8 @@
-16:30:55 **** Clean-only build of configuration Debug for project FFT_demo_AXIS_system ****
+19:55:11 **** Clean-only build of configuration Debug for project FFT_demo_AXIS_system ****
 make clean 
 rm -rf ./_sds
 rm -rf package
 rm -f system.bif
 
-16:30:55 Build Finished (took 179ms)
+19:55:11 Build Finished (took 187ms)
 

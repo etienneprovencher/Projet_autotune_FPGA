@@ -3980,3 +3980,927 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-150: Laun
 
 !ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 16:41:59.179
 !MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-150: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY org.eclipse.core.resources 4 568 2024-03-27 19:35:12.461
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (Le chemin d’accès spécifié est introuvable)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:158)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1765)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1846)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1202)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.776
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.794
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.817
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.834
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.836
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.882
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.912
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.916
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.919
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.922
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.923
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.924
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.927
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.928
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.930
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.971
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.972
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.975
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.977
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2024-03-27 19:35:17.978
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:53:58.643
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-206: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:53:58.751
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-206: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:53:58.753
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-206: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:53:58.788
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-206: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-03-27 19:53:58.791
+!MESSAGE Generating MD5 hash for file: C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:53:58.797
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-206: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:53:58.801
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-206: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:54:04.087
+!MESSAGE XSCT Command: [disconnect tcfchan#91], Thread: Thread-6154
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:54:04.128
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-217: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:54:04.222
+!MESSAGE XSCT command with result: [disconnect tcfchan#91], Result: [null, ]. Thread: Thread-6154
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:54:04.253
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#92]. Thread: Worker-217: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:54:04.255
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-217: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:54:07.290
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-217: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:54:10.300
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-217: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:54:13.307
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-217: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:54:13.310
+!MESSAGE XSCT Command: [version -server], Thread: Worker-217: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:54:13.313
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-217: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:54:13.314
+!MESSAGE XSCT Command: [version], Thread: Worker-217: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:54:13.315
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-217: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:54:13.316
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-217: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:54:16.321
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-217: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:54:19.330
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-217: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:54:22.337
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-217: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:41.181
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-217: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:41.197
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-217: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:41.198
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-217: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:41.204
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-217: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-03-27 19:55:41.205
+!MESSAGE Generating MD5 hash for file: C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:41.206
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-217: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:41.208
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-217: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:45.596
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:45.599
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#92]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:45.599
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:48.605
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:51.609
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:53.864
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-189: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:54.616
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:54.616
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#92]. Thread: Worker-189: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:54.617
+!MESSAGE XSCT Command: [version -server], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:54.617
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-189: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:54.618
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:54.619
+!MESSAGE XSCT Command: [version], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:57.625
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-189: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:57.626
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:55:57.626
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:56:00.630
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-189: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:56:00.632
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:56:03.638
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-189: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:56:03.638
+!MESSAGE XSCT Command: [version -server], Thread: Worker-189: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:56:03.640
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-189: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:56:03.641
+!MESSAGE XSCT Command: [version], Thread: Worker-189: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:56:03.642
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-189: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:56:03.643
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-189: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:56:03.643
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:56:06.649
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-189: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:56:09.655
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:56:09.657
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-189: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:56:12.664
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-189: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.634
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.642
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#92]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.643
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.659
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77C7BA]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.660
+!MESSAGE XSCT Command: [version -server], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.664
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.665
+!MESSAGE XSCT Command: [version], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.666
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.667
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.675
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77C7BA]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.676
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.699
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.700
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.709
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77C7BA]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.709
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.729
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.732
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.740
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77C7BA]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.741
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.760
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.765
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.773
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77C7BA]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.774
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.791
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.792
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.802
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77C7BA]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.803
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.821
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.824
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.833
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77C7BA]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.833
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.851
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.852
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A77C7BA" && level == 0}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.877
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A77C7BA" && level == 0}], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.881
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.883
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.884
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.915
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:21.916
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:22.007
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:22.008
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:25.010
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:25.113
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:25.126
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77C7BA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:25.126
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:25.150
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:25.157
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:25.195
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:25.196
+!MESSAGE XSCT Command: [fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:26.446
+!MESSAGE XSCT command with result: [fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:26.498
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:26.573
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:26.573
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:26.593
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_28]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:26.594
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:26.597
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:26.598
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:26.610
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:26.610
+!MESSAGE XSCT Command: [source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:26.621
+!MESSAGE XSCT command with result: [source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:26.622
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:27.158
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:27.159
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:27.180
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:27.181
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:27.195
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:27.197
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:27.227
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:27.228
+!MESSAGE XSCT Command: [dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:27.501
+!MESSAGE XSCT command with result: [dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:27.502
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:27.632
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:27.713
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:27.746
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:27.747
+!MESSAGE XSCT Command: [con], Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:27.994
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:45.580
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-215: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:45.601
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-215: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:45.603
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-215: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:45.609
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-215: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-03-27 19:58:45.610
+!MESSAGE Generating MD5 hash for file: C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:45.612
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-215: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:45.618
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-215: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:48.947
+!MESSAGE XSCT Command: [disconnect tcfchan#92], Thread: Thread-6257
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:48.953
+!MESSAGE XSCT command with result: [disconnect tcfchan#92], Result: [null, ]. Thread: Thread-6257
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:48.971
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:48.978
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#95]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:48.979
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:48.991
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77C7BA]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:48.992
+!MESSAGE XSCT Command: [version -server], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:48.994
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:48.995
+!MESSAGE XSCT Command: [version], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:48.996
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:48.997
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.005
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77C7BA]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.006
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.030
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.031
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.038
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77C7BA]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.039
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.058
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.059
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.068
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77C7BA]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.069
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.091
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.093
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.101
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77C7BA]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.101
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.122
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.123
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.131
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77C7BA]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.132
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.147
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.147
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.153
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77C7BA]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.154
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.172
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.172
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A77C7BA" && level == 0}], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.195
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A77C7BA" && level == 0}], Result: [null, ]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.196
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.205
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.207
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.235
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.236
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.313
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:49.313
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:52.319
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:52.335
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:52.342
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77C7BA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:52.343
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:52.360
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:52.362
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:52.393
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C7BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77C7BA-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:52.394
+!MESSAGE XSCT Command: [fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:53.616
+!MESSAGE XSCT command with result: [fpga -file C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/bitstream/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:53.662
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:53.677
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:53.677
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:53.688
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_28]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:53.689
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:53.692
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:53.693
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:53.704
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:53.705
+!MESSAGE XSCT Command: [source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:53.709
+!MESSAGE XSCT command with result: [source C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:53.710
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:54.161
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:54.162
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:54.169
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:54.170
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:54.172
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:54.173
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:54.191
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:54.192
+!MESSAGE XSCT Command: [dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:54.405
+!MESSAGE XSCT command with result: [dow C:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/FFT_demo_AXIS/Debug/FFT_demo_AXIS.elf], Result: [null, ]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:54.406
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:54.530
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:54.595
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:54.617
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:54.618
+!MESSAGE XSCT Command: [con], Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-27 19:58:54.843
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-222: Launching SystemDebugger_FFT_demo_AXIS_system
+
+!ENTRY org.eclipse.core.resources 4 568 2024-03-27 19:59:00.172
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (Le chemin d’accès spécifié est introuvable)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:158)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1765)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1846)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1202)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

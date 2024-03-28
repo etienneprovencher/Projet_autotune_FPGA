@@ -1,24 +1,5 @@
 Nothing to build in platform 'design_1_wrapper'
 
-16:41:48 **** Incremental Build of configuration Debug for project FFT_demo_AXIS ****
+19:58:45 **** Incremental Build of configuration Debug for project FFT_demo_AXIS ****
 make all 
-'Building file: ../src/FIFO_FFT_driver.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/FIFO_FFT_driver.o" -IC:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FIFO_FFT_driver.d" -MT"src/FIFO_FFT_driver.o" -o "src/FIFO_FFT_driver.o" "../src/FIFO_FFT_driver.c"
-../src/FIFO_FFT_driver.c: In function 'SetupInterruptSystem':
-../src/FIFO_FFT_driver.c:38:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
-   38 |  int Status;
-      |      ^~~~~~
-'Finished building: ../src/FIFO_FFT_driver.c'
-' '
-'Building target: FFT_demo_AXIS.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Xlinker -Map=output.map -Wl,-T -Wl,../src/lscript.ld -LC:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "FFT_demo_AXIS.elf"  ./src/FIFO_FFT_driver.o ./src/fft.o ./src/main.o ./src/uart.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: FFT_demo_AXIS.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size FFT_demo_AXIS.elf  |tee "FFT_demo_AXIS.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  32856	    564	   5108	  38528	   9680	FFT_demo_AXIS.elf
-'Finished building: FFT_demo_AXIS.elf.size'
-' '
+make: Nothing to be done for 'all'.

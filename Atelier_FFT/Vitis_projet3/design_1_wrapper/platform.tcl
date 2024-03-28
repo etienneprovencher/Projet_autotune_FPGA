@@ -43,3 +43,5 @@ platform generate -domains standalone_microblaze_0,zynq_fsbl
 platform generate -domains standalone_microblaze_0,zynq_fsbl 
 platform clean
 platform generate
+platform clean
+platform generate
