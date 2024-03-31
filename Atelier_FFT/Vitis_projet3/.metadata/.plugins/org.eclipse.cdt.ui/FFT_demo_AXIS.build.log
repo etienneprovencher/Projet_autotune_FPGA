@@ -1,6 +1,6 @@
-19:58:45 **** Incremental Build of configuration Debug for project FFT_demo_AXIS ****
+09:39:21 **** Incremental Build of configuration Debug for project FFT_demo_AXIS ****
 make all 
 make: Nothing to be done for 'all'.
 
-19:58:45 Build Finished (took 282ms)
+09:39:22 Build Finished (took 234ms)
 
