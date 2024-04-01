@@ -44,9 +44,9 @@ s32 FFTBuffer[MAX_DATA_BUFFER_SIZE];
 void InitProcessedData()
 {
 	unsigned int i;
-	const float scale1 = 10.0/128.0; //constante d'échelle pour la fréquence
-	const float scale2 = 41.0/128.0;
-	const float scale3 = 65.0/128.0;
+	const float scale1 = 10.0/1024.0; //constante d'échelle pour la fréquence
+	const float scale2 = 41.0/1024.0;
+	const float scale3 = 65.0/1024.0;
 
 	for(i=0;i<MAX_DATA_BUFFER_SIZE;i++){
 		//single sinewave

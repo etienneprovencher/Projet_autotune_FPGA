@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1711574711">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1711939309">
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="design_1_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="design_1_wrapper_reports.tcl"/>
@@ -75,11 +75,6 @@
   <BlockFileSet Type="BlockSrcs" Name="design_1_xfft_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_fifo_mm_s_0_2"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_auto_ds_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_auto_ds_4"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_auto_pc_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_auto_ds_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_auto_ds_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_auto_us_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_auto_ds_1"/>
 </GenRun>

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/etipr/Atelier_FFT/Vivado_projet/APP6/APP6.runs/synth_1'
+HD_PWD='C:/Users/etipr/Projet_autotune_FPGA/Vivado_projet/APP6/APP6.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
