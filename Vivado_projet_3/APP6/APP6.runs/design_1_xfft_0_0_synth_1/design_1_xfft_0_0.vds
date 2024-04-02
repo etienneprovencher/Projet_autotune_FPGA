@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr  2 13:12:41 2024
+# Process ID: 77152
+# Current directory: C:/Users/etipr/Projet_autotune_FPGA/Vivado_projet_3/APP6/APP6.runs/design_1_xfft_0_0_synth_1
+# Command line: vivado.exe -log design_1_xfft_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xfft_0_0.tcl
+# Log file: C:/Users/etipr/Projet_autotune_FPGA/Vivado_projet_3/APP6/APP6.runs/design_1_xfft_0_0_synth_1/design_1_xfft_0_0.vds
+# Journal file: C:/Users/etipr/Projet_autotune_FPGA/Vivado_projet_3/APP6/APP6.runs/design_1_xfft_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_xfft_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1139.332 ; gain = 0.000
+Command: synth_design -top design_1_xfft_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 75992
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1188.105 ; gain = 48.773
+---------------------------------------------------------------------------------

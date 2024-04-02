@@ -171,11 +171,13 @@ int TxSend(XLlFifo *InstancePtr, u32  *SourceAddr)
 
 	for(i=0; i < NO_OF_PACKETS; i++){
 		/* Writing into the FIFO Transmit Port Buffer */
+
 		for (j=0; j < MAX_FFT_LEN; j++){
 			if( XLlFifo_iTxVacancy(InstancePtr) ){
 				XLlFifo_TxPutWord(InstancePtr,
 					*(SourceAddr+(i*MAX_FFT_LEN)+j));
 			}
+
 		}
 
 	}

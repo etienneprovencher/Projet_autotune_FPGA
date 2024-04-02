@@ -1,6 +1,6 @@
 Nothing to build in platform 'design_1_wrapper'
 
-17:43:56 **** Incremental Build of configuration Debug for project FFT_demo_AXIS ****
+21:46:43 **** Incremental Build of configuration Debug for project FFT_demo_AXIS ****
 make all 
 'Building file: ../src/FIFO_FFT_driver.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -11,47 +11,6 @@ mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/FIFO_FFT_driver.o" -IC:/Users
       |      ^~~~~~
 'Finished building: ../src/FIFO_FFT_driver.c'
 ' '
-'Building file: ../src/fft.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/fft.o" -IC:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/fft.d" -MT"src/fft.o" -o "src/fft.o" "../src/fft.c"
-../src/fft.c: In function 'initFIFO_FFT':
-../src/fft.c:111:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
-  111 |  int Status;
-      |      ^~~~~~
-../src/fft.c: In function 'do_forward_FFT':
-../src/fft.c:128:6: warning: unused variable 'Status' [-Wunused-variable]
-  128 |  int Status = XLlFifoSendData(&FifoInstance, FIFO_FFT_ID, dataToFFT);
-      |      ^~~~~~
-../src/fft.c: In function 'do_reverse_FFT':
-../src/fft.c:148:6: warning: unused variable 'Status' [-Wunused-variable]
-  148 |  int Status = XLlFifoSendData(&FifoInstance, FIFO_FFT_ID, dataToiFFT);
-      |      ^~~~~~
-'Finished building: ../src/fft.c'
-' '
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -IC:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:83:21: warning: pointer targets in passing argument 1 of 'do_forward_FFT' differ in signedness [-Wpointer-sign]
-   83 |      do_forward_FFT(SourceBuffer, FFTBuffer);
-      |                     ^~~~~~~~~~~~
-      |                     |
-      |                     s32 * {aka long int *}
-In file included from ../src/main.c:36:
-../src/fft.h:7:26: note: expected 'u32 *' {aka 'long unsigned int *'} but argument is of type 's32 *' {aka 'long int *'}
-    7 | void do_forward_FFT(u32* dataToFFT, u32* FFTResult);
-      |                     ~~~~~^~~~~~~~~
-../src/main.c:83:35: warning: pointer targets in passing argument 2 of 'do_forward_FFT' differ in signedness [-Wpointer-sign]
-   83 |      do_forward_FFT(SourceBuffer, FFTBuffer);
-      |                                   ^~~~~~~~~
-      |                                   |
-      |                                   s32 * {aka long int *}
-In file included from ../src/main.c:36:
-../src/fft.h:7:42: note: expected 'u32 *' {aka 'long unsigned int *'} but argument is of type 's32 *' {aka 'long int *'}
-    7 | void do_forward_FFT(u32* dataToFFT, u32* FFTResult);
-      |                                     ~~~~~^~~~~~~~~
-'Finished building: ../src/main.c'
-' '
 'Building target: FFT_demo_AXIS.elf'
 'Invoking: MicroBlaze gcc linker'
 mb-gcc -Xlinker -Map=output.map -Wl,-T -Wl,../src/lscript.ld -LC:/Users/etipr/Projet_autotune_FPGA/Atelier_FFT/Vitis_projet3/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "FFT_demo_AXIS.elf"  ./src/FIFO_FFT_driver.o ./src/fft.o ./src/main.o ./src/uart.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
@@ -60,6 +19,6 @@ mb-gcc -Xlinker -Map=output.map -Wl,-T -Wl,../src/lscript.ld -LC:/Users/etipr/Pr
 'Invoking: MicroBlaze Print Size'
 mb-size FFT_demo_AXIS.elf  |tee "FFT_demo_AXIS.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  33208	   2484	  15860	  51552	   c960	FFT_demo_AXIS.elf
+  33244	   2484	  15864	  51592	   c988	FFT_demo_AXIS.elf
 'Finished building: FFT_demo_AXIS.elf.size'
 ' '

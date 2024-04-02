@@ -1,6 +1,6 @@
-17:42:35 **** Build of configuration Debug for project FFT_demo_AXIS_system ****
+19:29:40 **** Build of configuration Debug for project FFT_demo_AXIS_system ****
 make all 
 Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
 
-17:42:36 Build Finished (took 125ms)
+19:29:40 Build Finished (took 125ms)
 
