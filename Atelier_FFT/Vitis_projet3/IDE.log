@@ -12443,3 +12443,4 @@ con
 ----------------End of Script----------------
 
 21:46:52 INFO  : Launch script is exported to file 'C:\Users\etipr\Projet_autotune_FPGA\Atelier_FFT\Vitis_projet3\FFT_demo_AXIS_system\_ide\scripts\systemdebugger_fft_demo_axis_system_standalone.tcl'
+13:20:39 INFO  : Checking for BSP changes to sync application flags for project 'FFT_demo_AXIS'...
