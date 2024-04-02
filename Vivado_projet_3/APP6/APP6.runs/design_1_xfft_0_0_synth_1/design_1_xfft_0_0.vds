@@ -139,3 +139,134 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:02:07 . Memory (MB): peak = 2413.473 ; gain = 1274.141
 ---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:02:21 . Memory (MB): peak = 2413.473 ; gain = 1274.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:02:24 . Memory (MB): peak = 2413.473 ; gain = 1274.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:24 ; elapsed = 00:02:29 . Memory (MB): peak = 2413.473 ; gain = 1274.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:02:34 . Memory (MB): peak = 2413.473 ; gain = 1274.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:02:34 . Memory (MB): peak = 2413.473 ; gain = 1274.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:27 ; elapsed = 00:02:36 . Memory (MB): peak = 2413.473 ; gain = 1274.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:27 ; elapsed = 00:02:36 . Memory (MB): peak = 2413.473 ; gain = 1274.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:02:36 . Memory (MB): peak = 2413.473 ; gain = 1274.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:27 ; elapsed = 00:02:36 . Memory (MB): peak = 2413.473 ; gain = 1274.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |DSP48E1  |    12|
+|3     |LUT1     |    30|
+|4     |LUT2     |   425|
+|5     |LUT3     |   786|
+|6     |LUT4     |   210|
+|7     |LUT5     |    24|
+|8     |LUT6     |   299|
+|9     |MUXCY    |   822|
+|10    |RAM64X1S |    31|
+|11    |RAMB18E1 |     1|
+|12    |SRL16E   |   744|
+|13    |SRLC32E  |   130|
+|14    |XORCY    |   802|
+|15    |FD       |     4|
+|16    |FDE      |   298|
+|17    |FDR      |     7|
+|18    |FDRE     |  2754|
+|19    |FDSE     |    35|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:27 ; elapsed = 00:02:37 . Memory (MB): peak = 2413.473 ; gain = 1274.141
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:02:28 . Memory (MB): peak = 2413.473 ; gain = 1274.141
+Synthesis Optimization Complete : Time (s): cpu = 00:01:27 ; elapsed = 00:02:39 . Memory (MB): peak = 2413.473 ; gain = 1274.141
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.218 . Memory (MB): peak = 2413.473 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1977 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2413.473 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 595 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 255 instances
+  FD => FDRE: 4 instances
+  FDE => FDRE: 298 instances
+  FDR => FDRE: 7 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 31 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:33 ; elapsed = 00:03:07 . Memory (MB): peak = 2413.473 ; gain = 1274.141
+INFO: [Common 17-1381] The checkpoint 'C:/Users/etipr/Projet_autotune_FPGA/Vivado_projet_3/APP6/APP6.runs/design_1_xfft_0_0_synth_1/design_1_xfft_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_xfft_0_0, cache-ID = 645739bf2dec730f
+INFO: [Coretcl 2-1174] Renamed 618 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/etipr/Projet_autotune_FPGA/Vivado_projet_3/APP6/APP6.runs/design_1_xfft_0_0_synth_1/design_1_xfft_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_xfft_0_0_utilization_synth.rpt -pb design_1_xfft_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  2 13:16:18 2024...
